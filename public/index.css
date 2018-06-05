@@ -1,6 +1,6 @@
 body{
 	background-color: #fff;
-	animation: bg-change 0.1s linear 2.11s forwards;
+	animation: bg-change 0.1s linear 2s forwards;
 }
 
 .loader{
@@ -47,14 +47,14 @@ body{
 	border-top: 1px solid #000;
 	width: calc(11.18vh);
 	transform: translate(2vh, 5vh) rotate(63.43deg);
-	animation: oec-text-t 0.1s linear 2.11s forwards;
+	animation: oec-text-t 0.1s linear 2s forwards;
 }
 
 .t3{
 	border-top: 1px solid #000;
 	width: calc(11.18vh);
 	transform: translate(-3vh, 4.8vh) rotate(-63.43deg);
-	animation: oec-text-t 0.1s linear 2.11s forwards;
+	animation: oec-text-t 0.1s linear 2s forwards;
 }
 
 .n{
@@ -105,7 +105,7 @@ body{
 
 	background-color: #000;
 	
-	animation: hide 2.11s, umbra-move 3s cubic-bezier(0.05, 0.66, 0.14, 0.92) 2.11s;
+	animation: hide 2s, umbra-move 3s cubic-bezier(0.05, 0.66, 0.14, 0.92) 2s;
 }
 
 #moon{
@@ -122,7 +122,7 @@ body{
 	
 	background-color: #590a1c;
 	
-	animation: hide 2.11s, oec 2s ease 2.11s;
+	animation: hide 2s, oec 2s ease 2s;
 }
 
 @keyframes oec{
@@ -305,29 +305,29 @@ body{
 }
 
 #d1{
-	animation: fade-in 0.16s, oec-text 0.1s linear 2.11s forwards, o1 0.5s linear 1.71s forwards;
+	animation: fade-in 0.16s, oec-text 0.1s linear 2s forwards, o1 0.3s ease-in 1.71s forwards;
 }
 
 #d2{
-	animation: hide 0.16s, oec-text-t 0.1s linear 2.11s forwards, oec-text-l 0.1s linear 2.11s forwards, oec-text-b 0.1s linear 2.11s forwards, rotateAndUp 0.16s linear 0.16s, n 0.5s linear 1.71s forwards;
+	animation: hide 0.16s, oec-text-t 0.1s linear 2s forwards, oec-text-l 0.1s linear 2s forwards, oec-text-b 0.1s linear 2s forwards, rotateAndUp 0.16s linear 0.16s, n 0.3s ease-in 1.71s forwards;
 }
 
 #d3{
-	animation: hide 0.22s, oec-text 0.1s linear 2.11s forwards, right 0.16s linear 0.22s, o0 0.5s linear 1.71s forwards;
+	animation: hide 0.22s, oec-text 0.1s linear 2s forwards, right 0.16s linear 0.22s, o0 0.3s ease-in 1.71s forwards;
 }
 
 #d4{
-	animation: hide 0.58s, rotate 0.13s linear 0.58s forwards, s 0.5s linear 1.71s forwards;
+	animation: hide 0.58s, rotate 0.13s linear 0.58s forwards, s 0.3s ease-in 1.71s forwards;
 }
 
 #d4::after{
-	animation: oec-text-t 0.1s linear 2.11s forwards;
+	animation: oec-text-t 0.1s linear 2s forwards;
 }
 
 #d5{
-	animation: hide 0.38s, oec-text 0.1s linear 2.11s forwards, up 0.16s linear 0.38s, a 0.5s linear 1.71s forwards;
+	animation: hide 0.38s, oec-text 0.1s linear 2s forwards, up 0.16s linear 0.38s, a 0.3s ease-in 1.71s forwards;
 }
 
 #d6{
-	animation: hide 0.32s, oec-text-l 0.1s linear 2.11s forwards, rotate 0.27s linear 0.32s, oec-text-b 0.1s linear 2.11s forwards, l 0.5s linear 1.71s forwards;
+	animation: hide 0.32s, oec-text-l 0.1s linear 2s forwards, rotate 0.27s linear 0.32s, oec-text-b 0.1s linear 2s forwards, l 0.3s ease-in 1.71s forwards;
 }
