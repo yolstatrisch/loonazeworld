@@ -10,6 +10,23 @@ body{
     vertical-align: middle;
 }
 
+.page{
+	opacity: 0;
+	color: #fff;
+	
+	transition: opacity 0.5s ease-in 1s;
+}
+
+.fade-in{
+	opacity: 1;
+}
+
+.fade-out{
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s 1s, opacity 1s linear;
+}
+
 .c, .d, .s, .t, .n{
 	position: absolute;
 	height: 10vh;
@@ -122,7 +139,7 @@ body{
 	
 	background-color: #590a1c;
 	
-	animation: hide 2s, oec 2s ease 2s;
+	animation: hide 2s, oec 3s ease 2s;
 }
 
 @keyframes oec{

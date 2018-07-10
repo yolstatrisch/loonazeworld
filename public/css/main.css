@@ -1,0 +1,79 @@
+@font-face {
+	font-family: "TingTong";
+	src: url(../fonts/TingTong.ttf)format("truetype")	
+}
+
+#header{
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 0;
+	margin: 0,;
+	width: 20%;
+	height: 100%;
+	
+	background: #000;
+}
+
+#content{
+	display: inline-flex;
+	width: 80%;
+	height: 100%;
+	float: right;
+	
+	background: #000;
+}
+
+ul{
+	list-style: none;
+	padding: 1em;
+	margin: 0;
+	background: #000;
+	display: inline;
+}
+
+li{
+	display: inline;
+	text-align: center;
+	justify-content: center;
+	font-family: "TingTong";
+	font-weight: bold;
+	font-size: 3em;
+	width: 20em;
+	height: 2em;
+}
+
+li:hover .text{
+	width: 4em;
+	
+	transition: width 0.25s linear;
+}
+
+.text{
+	display:inline-block;
+	width: 0;
+	height: 1.15em;
+	background-image: -webkit-linear-gradient(155deg, #f34026, #fedd3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 60s infinite linear;
+	-webkit-user-select: none;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.logo{
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+@-webkit-keyframes hue {
+    from {
+      -webkit-filter: hue-rotate(0deg);
+    }
+
+    to {
+      -webkit-filter: hue-rotate(360deg);
+    }
+}

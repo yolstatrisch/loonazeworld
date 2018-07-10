@@ -1,6 +1,7 @@
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="index.css">
+		<link rel="stylesheet" type="text/css" href="css/loaderanim.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
 	<body>
 		<div class="loader">
@@ -16,7 +17,32 @@
 					<div class="t3"></div>
 				</div>
 				<div id="d6" class="r2 c1 n"></div>
-			<div>
+			</div>
 		</div>
+		
+		<div class="page"></div>
 	</body>
+	<footer>
+		<script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(".page").load("content.html");
+			
+				moonAnim = 2;
+				cnt = 0;
+			
+				$("#moon").on('oanimationend animationend webkitAnimationEnd', function() { 
+				   cnt++;
+
+					if(cnt == moonAnim){
+						$(".loader").addClass("fade-out");
+						$(".page").addClass("fade-in");
+					}		   
+				});			
+			});
+		</script>
+	</footer>
 </html>
