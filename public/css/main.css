@@ -35,7 +35,7 @@ html{
 #content{
 	display: inline-flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
 	width: 75%;
 	height: 100%;
@@ -52,6 +52,11 @@ b{
 	background-image: -webkit-linear-gradient(95deg, #ff0000, #ff00ff);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+}
+
+hr {
+	color: #ddd;
+	width: 100%;
 }
 
 ul{
@@ -75,13 +80,13 @@ li{
 }
 
 li:hover .text{
-	width: 4em;
+	width: 13vw;
 	
 	transition: width 0.25s linear;
 }
 
 .text{
-	display:inline-block;
+	display: inline-block;
 	width: 0;
 	height: 1.15em;
 	background-image: -webkit-linear-gradient(155deg, #f34026, #fedd3a);
@@ -90,6 +95,7 @@ li:hover .text{
 	-webkit-animation: hue 60s infinite linear;
 	cursor: pointer;
 	overflow: hidden;
+	overflow-wrap: break-word;
 	text-align: left;
 	padding-left: 0.2em;
 }
