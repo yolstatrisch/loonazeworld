@@ -1,6 +1,22 @@
 @font-face {
 	font-family: "TingTong";
-	src: url(../fonts/TingTong.ttf)format("truetype")	
+	src: url(../fonts/TingTong.ttf)format("truetype");
+}
+
+@font-face {
+	font-family: "Comfortaa";
+	src: url(../fonts/Comfortaa-Light.ttf)format("truetype");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Comfortaa";
+	src: url(../fonts/Comfortaa-Regular.ttf)format("truetype");
+	font-weight: bold;
+}
+
+html{
+	font-family: "Comfortaa";
 }
 
 #header{
@@ -11,17 +27,31 @@
 	margin: 0,;
 	width: 20%;
 	height: 100%;
+	position:fixed;
 	
 	background: #000;
 }
 
 #content{
 	display: inline-flex;
-	width: 80%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 75%;
 	height: 100%;
 	float: right;
 	
 	background: #000;
+}
+
+a {
+    color: #fff;
+}
+
+b{
+	background-image: -webkit-linear-gradient(95deg, #ff0000, #ff00ff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 ul{
@@ -41,6 +71,7 @@ li{
 	font-size: 3em;
 	width: 20em;
 	height: 2em;
+	-webkit-user-select: none;
 }
 
 li:hover .text{
@@ -57,15 +88,23 @@ li:hover .text{
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	-webkit-animation: hue 60s infinite linear;
-	-webkit-user-select: none;
 	cursor: pointer;
 	overflow: hidden;
+	text-align: left;
+	padding-left: 0.2em;
 }
 
 .logo{
 	margin: 0;
 	padding: 0;
 	float: left;
+}
+
+.logo:hover{
+	background-image: -webkit-linear-gradient(155deg, #d34026, #dedd3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 60s infinite linear;
 }
 
 @-webkit-keyframes hue {
