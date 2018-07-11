@@ -15,12 +15,15 @@
 	font-weight: bold;
 }
 
+.flex{
+	display: inline-flex;
+}
+
 html{
 	font-family: "Comfortaa";
 }
 
 #header{
-	display: inline-flex;
 	align-items: center;
 	justify-content: flex-start;
 	padding: 0;
@@ -33,7 +36,7 @@ html{
 }
 
 #content{
-	display: inline-flex;
+	display:inline-flex;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: center;
@@ -44,12 +47,18 @@ html{
 	background: #000;
 }
 
-a {
-    color: #fff;
+#links{
+	align-items: flex-start;
+	justify-content: space-around;
+	width: 100%;
 }
 
-b{
-	background-image: -webkit-linear-gradient(95deg, #ff0000, #ff00ff);
+a:link, a:visited{
+	color: #dedd3a;
+}
+
+a:hover{
+	background-image: -webkit-linear-gradient(95deg, #d34026, #e2e026);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -77,10 +86,11 @@ li{
 	width: 20em;
 	height: 2em;
 	-webkit-user-select: none;
+	cursor: pointer;
 }
 
 li:hover .text{
-	width: 13vw;
+	width: 14vw;
 	
 	transition: width 0.25s linear;
 }
@@ -93,7 +103,6 @@ li:hover .text{
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	-webkit-animation: hue 60s infinite linear;
-	cursor: pointer;
 	overflow: hidden;
 	overflow-wrap: break-word;
 	text-align: left;
