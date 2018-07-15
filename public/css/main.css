@@ -18,6 +18,7 @@
 @font-face {
 	font-family: "Gaegu";
 	src: url(../fonts/Gaegu-Regular.ttf)format("truetype");
+	unicode-range: U+AC00-D7AF;
 }
 
 .flex{

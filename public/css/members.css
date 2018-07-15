@@ -13,51 +13,51 @@
 	--olivia: #222222;
 }
 
-.heejin{
+.tab.heejin{
 	background-image: -webkit-radial-gradient(circle, white 40%, var(--heejin));
 }
 
-.hyunjin{
+.tab.hyunjin{
 	background-image: -webkit-radial-gradient(circle, white 40%, var(--hyunjin));
 }
 
-.haseul{
+.tab.haseul{
 	background-image: -webkit-radial-gradient(circle, white 40%, var(--haseul));
 }
 
-.yeojin{
+.tab.yeojin{
 	background-image: -webkit-radial-gradient(circle, white 40%, var(--yeojin));
 }
 
-.vivi{
+.tab.vivi{
 	background-image: -webkit-radial-gradient(circle, white 40%, var(--vivi));
 }
 
-.kimlip{
+.tab.kimlip{
 	background-image: -webkit-radial-gradient(circle, white 40%, var(--kimlip));
 }
 
-.jinsoul{
+.tab.jinsoul{
 	background-image: -webkit-radial-gradient(circle, white 40%, var(--jinsoul));
 }
 
-.choerry{
+.tab.choerry{
 	background-image: -webkit-radial-gradient(circle, white 40%, var(--choerry));
 }
 
-.yves{
+.tab.yves{
 	background-image: -webkit-radial-gradient(circle, white 40%, var(--yves));
 }
 
-.chuu{
+.tab.chuu{
 	background-image: -webkit-radial-gradient(circle, white 40%, var(--chuu));
 }
 
-.gowon{
+.tab.gowon{
 	background-image: -webkit-radial-gradient(circle, white 40%, var(--gowon));
 }
 
-.olivia{
+.tab.olivia{
 	background-image: -webkit-radial-gradient(circle, white, var(--olivia));
 }
 
