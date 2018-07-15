@@ -3,9 +3,7 @@ image: alpine:latest
 pages:
   stage: deploy
   script:
-  - npm install
-  - npm run build
-  - gzip -k -6 -r public
+  -
 
   artifacts:
     paths:
