@@ -21,6 +21,10 @@
 	unicode-range: U+AC00-D7AF;
 }
 
+#preload{
+	font-family: "Gaegu";
+}
+
 .flex{
 	display: inline-flex;
 }
