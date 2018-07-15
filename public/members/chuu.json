@@ -1,0 +1,99 @@
+{
+	"id": "chuu",
+	"stageName": "Chuu",
+	"koreanName": "김지우",
+	"familyClan": "김해 김씨",
+	"birthDate": {
+		"year": 1999,
+		"month": 10,
+		"day": 20
+	},
+	"zodiac": "Libra",
+	"debutDate": {
+		"year": 2017,
+		"month": 12,
+		"day": 28
+	},
+	"subunit": "이달의 소녀 yyxy",
+	"subunitEN": "LOONA yyxy",
+	"education": "한림연예예술고등학교 실용음악과",
+	"educationEN": "Hallim Multi Arts Highschool, Performing Arts",
+	"animal": "Penguin",
+	"color": "Peach",
+	"fruit": "Strawberry",
+	"nthMember": 10,
+	"discography": [{
+			"albumName": "Chuu",
+			"song": "Heart Attack",
+			"artists": [
+				"Chuu"
+			],
+			"releaseDate": {
+				"year": 2017,
+				"month": 12,
+				"day": 28
+			},
+			"notes": [
+				"Debut Single",
+				"Project Single"
+			]
+		},
+		{
+			"albumName": "Chuu",
+			"song": "Girl's Talk",
+			"artists": [
+				"Chuu",
+				"Yves"
+			],
+			"releaseDate": {
+				"year": 2017,
+				"month": 12,
+				"day": 28
+			},
+			"notes": [
+				"Debut Single",
+				"Project Single"
+			]
+		},
+		{
+			"albumName": "Go Won",
+			"song": "See Saw",
+			"artists": [
+				"Go Won",
+				"Chuu"
+			],
+			"featuredArtists": [
+				"Kim Lip"
+			],
+			"releaseDate": {
+				"year": 2018,
+				"month": 1,
+				"day": 30
+			},
+			"notes": [
+				"Project Single"
+			]
+		},
+		{
+			"albumName": "beauty&thebeat",
+			"song": "love4eva",
+			"artists": [
+				"Yves",
+				"Chuu",
+				"Go Won",
+				"Olivia Hye"
+			],
+			"featuredArtists": [
+				"Grimes"
+			],
+			"releaseDate": {
+				"year": 2018,
+				"month": 5,
+				"day": 30
+			},
+			"notes": [
+				"yyxy Debut Mini Album"
+			]
+		}
+	]
+}

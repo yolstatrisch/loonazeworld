@@ -1,0 +1,66 @@
+:root{
+	--heejin: #d90089;
+	--hyunjin: #fad11b;
+	--haseul: #00ff00;
+	--yeojin: orange;
+	--vivi: #f79ab5;
+	--kimlip: #8c0034;
+	--jinsoul: #1d19ce;
+	--choerry: #7c17c6;
+	--yves: #730023;
+	--chuu: #f57f70;
+	--gowon: #4cdaa8;
+	--olivia: #222222;
+}
+
+.heejin{
+	background-image: -webkit-radial-gradient(circle, white 40%, var(--heejin));
+}
+
+.hyunjin{
+	background-image: -webkit-radial-gradient(circle, white 40%, var(--hyunjin));
+}
+
+.haseul{
+	background-image: -webkit-radial-gradient(circle, white 40%, var(--haseul));
+}
+
+.yeojin{
+	background-image: -webkit-radial-gradient(circle, white 40%, var(--yeojin));
+}
+
+.vivi{
+	background-image: -webkit-radial-gradient(circle, white 40%, var(--vivi));
+}
+
+.kimlip{
+	background-image: -webkit-radial-gradient(circle, white 40%, var(--kimlip));
+}
+
+.jinsoul{
+	background-image: -webkit-radial-gradient(circle, white 40%, var(--jinsoul));
+}
+
+.choerry{
+	background-image: -webkit-radial-gradient(circle, white 40%, var(--choerry));
+}
+
+.yves{
+	background-image: -webkit-radial-gradient(circle, white 40%, var(--yves));
+}
+
+.chuu{
+	background-image: -webkit-radial-gradient(circle, white 40%, var(--chuu));
+}
+
+.gowon{
+	background-image: -webkit-radial-gradient(circle, white 40%, var(--gowon));
+}
+
+.olivia{
+	background-image: -webkit-radial-gradient(circle, white, var(--olivia));
+}
+
+.sel{
+	background-position: 5em 0px;
+}

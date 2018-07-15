@@ -1,0 +1,43 @@
+{
+	"id": "",
+	"stageName": "",
+	"koreanName": "",
+	"familyClan": "",
+	"birthDate": {
+		"year": ,
+		"month": ,
+		"day": 
+	},
+	"zodiac": "",
+	"debutDate": {
+		"year": ,
+		"month": ,
+		"day": 
+	},
+	"subunit": "이달의 소녀 ",
+	"subunitEN": "LOONA ",
+	"education": "",
+	"educationEN": "",
+	"animal": "",
+	"color": "",
+	"fruit": "",
+	"nthMember": ,
+	//TODO: move discography to a single file.
+	"discography": [{
+			"albumName": "",
+			"song": "",
+			"artists": [
+				""
+			],
+			"releaseDate": {
+				"year": ,
+				"month": ,
+				"day": 
+			},
+			"notes": [
+				"Debut Single",
+				"Project Single"
+			]
+		}
+	]
+}

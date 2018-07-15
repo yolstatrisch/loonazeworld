@@ -1,0 +1,106 @@
+{
+	"id": "heejin",
+	"stageName": "Heejin",
+	"koreanName": "전희진",
+	"familyClan": "담양 전씨",
+	"birthDate": {
+		"year": 2000,
+		"month": 10,
+		"day": 19
+	},
+	"zodiac": "Libra",
+	"debutDate": {
+		"year": 2016,
+		"month": 10,
+		"day": 5
+	},
+	"subunit": "이달의 소녀 1/3",
+	"subunitEN": "LOONA 1/3",
+	"education": "한성여자고등학교",
+	"educationEN": "Hansung Girls' High School",
+	"animal": "Rabbit",
+	"color": "Pink",
+	"nthMember": 1,
+	"discography": [{
+			"albumName": "HeeJin",
+			"song": "ViViD",
+			"artists": [
+				"Heejin"
+			],
+			"releaseDate": {
+				"year": 2016,
+				"month": 10,
+				"day": 5
+			},
+			"notes": [
+				"Debut Single",
+				"Project Single"
+			]
+		},
+		{
+			"albumName": "HeeJin",
+			"song": "ViViD (Acoustic Mix)",
+			"artists": [
+				"Heejin"
+			],
+			"releaseDate": {
+				"year": 2016,
+				"month": 10,
+				"day": 5
+			},
+			"notes": [
+				"Debut Single",
+				"Project Single"
+			]
+		},
+		{
+			"albumName": "HyunJin",
+			"song": "I'll Be There",
+			"artists": [
+				"Hyunjin",
+				"Heejin"
+			],
+			"releaseDate": {
+				"year": 2016,
+				"month": 11,
+				"day": 17
+			},
+			"notes": [
+				"Project Single"
+			]
+		},
+		{
+			"albumName": "HaSeul",
+			"song": "The Carol",
+			"artists": [
+				"Heejin",
+				"Hyunjin",
+				"Haseul"
+			],
+			"releaseDate": {
+				"year": 2016,
+				"month": 12,
+				"day": 15
+			},
+			"notes": [
+				"Project Single"
+			]
+		},
+		{
+			"albumName": "YeoJin",
+			"song": "My Sunday",
+			"artists": [
+				"Heejin",
+				"Hyunjin"
+			],
+			"releaseDate": {
+				"year": 2016,
+				"month": 1,
+				"day": 16
+			},
+			"notes": [
+				"Project Single"
+			]
+		}
+	]
+}

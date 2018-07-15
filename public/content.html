@@ -1,11 +1,10 @@
 <div id="header" class="flex">
 	<ul>
-		<li onclick="changeContent('home')"><div class="logo" id="home">O</div><span class="text">Home</span></li><br />
-		<li onclick="changeContent('about')"><div class="logo" id="home">O</div><span class="text">Members</span></li><br />
-		<li onclick="changeContent('about')"><div class="logo" id="home">O</div><span class="text">Videos</span></li><br />
-		<li onclick="changeContent('about')"><div class="logo" id="home">O</div><span class="text">Stream</span></li><br />
-		<li onclick="changeContent('about')"><div class="logo" id="home">O</div><span class="text">About</span></li><br />
-		<li onclick="changeContent('links')"><div class="logo" id="home">O</div><span class="text">Links</span></li><br />
+		<li onclick="load('#content', 'home')"><div class="logo" id="home">O</div><span class="text">Home</span></li><br />
+		<li onclick="load('#content', 'members')"><div class="logo" id="home">O</div><span class="text">Members</span></li><br />
+		<li onclick="load('#content', 'videos')"><div class="logo" id="home">O</div><span class="text">Videos</span></li><br />
+		<li onclick="load('#content', 'about')"><div class="logo" id="home">O</div><span class="text">About</span></li><br />
+		<li onclick="load('#content', 'links')"><div class="logo" id="home">O</div><span class="text">Links</span></li><br />
 	</ul>
 </div>
 <div id="content" class="empty"></div>
@@ -28,6 +27,50 @@
 			});
 			
 			$("#content").load(page + ".html");
+		}
+	}
+	
+	function load(id, className){
+		if($(id).attr("class") != className){
+			$(id).removeClass();
+			
+			className = className.split(' ');
+			page = '.';
+			
+			className.forEach(function(c){
+				$(id).addClass(c);
+				page += '/' + c;
+			});
+			
+			$(id).load(page + ".html");
+		}
+	}
+	
+	function loadJSON(id, path){
+		if($(id).attr("class") != path){
+			$(id).removeClass();
+			
+			path = path.split(' ');
+			page = '.';
+			
+			console.log('.tab.' + path[path.length - 1]);
+			
+			path.forEach(function(c){
+				//$(id).addClass(c);
+				page += '/' + c;
+			});
+			
+			html = "";
+			
+			$.getJSON(page + ".json", function(json){
+				for(key in json){
+					html += key + " : " + json[key] + "<br>";
+				}
+				$(id).html(html);
+			});
+			
+			$('.sel').removeClass('sel');
+			$('.tab.' + path[path.length - 1]).addClass('sel');
 		}
 	}
 </script>

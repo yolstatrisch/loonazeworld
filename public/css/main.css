@@ -15,6 +15,11 @@
 	font-weight: bold;
 }
 
+@font-face {
+	font-family: "Gaegu";
+	src: url(../fonts/Gaegu-Regular.ttf)format("truetype");
+}
+
 .flex{
 	display: inline-flex;
 }
@@ -51,6 +56,44 @@ html{
 	align-items: flex-start;
 	justify-content: space-around;
 	width: 100%;
+}
+
+#members{
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 100%;
+}
+
+#details h1{
+	font-family: "TingTong";
+	width: 100%;
+}
+
+.tabs{
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.tab{
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	
+	width: 6em;
+	
+	background-size: 12em;
+	background-position: center;
+	
+	text-align: right;
+	font-family: "Gaegu";
+	font-size: 2em;
+	-webkit-user-select: none;
+	cursor: pointer;
+	
+	transition: background-position 0.25s linear;
+}
+
+.tab:hover{
+	background-position: 5em 0px;
 }
 
 a:link, a:visited{
