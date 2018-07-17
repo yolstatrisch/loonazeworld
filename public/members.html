@@ -1,12 +1,10 @@
 <link rel="stylesheet" type="text/css" href="css/members.css">
 
-<h1>Members</h1>
-<hr />
 <p>
 	<div id="members" class="flex">
-		<div id="details">test </div>
+		<div id="details"></div>
 		<div class="tabs">
-			<div class="tab heejin" onclick="loadJSON('#details', 'members heejin')">희진</div>
+			<div class="tab heejin sel" onclick="loadJSON('#details', 'members heejin')">희진</div>
 			<div class="tab hyunjin" onclick="loadJSON('#details', 'members hyunjin')">현진</div>
 			<div class="tab haseul" onclick="loadJSON('#details', 'members haseul')">하슬</div>
 			<div class="tab yeojin" onclick="loadJSON('#details', 'members yeojin')">여진</div>
@@ -21,3 +19,50 @@
 		</div>
 	</div>
 </p>
+
+<script type="text/javascript">
+	$(function() {
+		$('#details').load('members/meminfo.html');
+	
+		//loadJSON('#details', 'members template');
+	});
+	
+	function loadJSON(id, path){
+		if($(id).attr("class") != path){
+			$(id).removeClass();
+			
+			path = path.split(' ');
+			page = '.';
+			
+			console.log('.tab.' + path[path.length - 1]);
+			
+			path.forEach(function(c){
+				$(id).addClass(c);
+				page += '/' + c;
+			});
+			
+			html = "";
+			
+			$.getJSON(page + ".json", function(json){
+				jsonToHtml(id, json);
+				/*
+				for(key in json){
+					html += key + " : " + json[key] + "<br>";
+				}
+				$(id).html(html);
+				*/
+			});
+			
+			$('.sel').removeClass('sel');
+			$('.tab.' + path[path.length - 1]).addClass('sel');
+		}
+	}
+	
+	function jsonToHtml(id, json){
+		for(key in json){
+			if($('#_' + key).length){
+				$('#_' + key).html(json[key]);
+			}
+		}
+	}
+</script>
