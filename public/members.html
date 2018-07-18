@@ -22,7 +22,10 @@
 
 <script type="text/javascript">
 	$(function() {
-		$('#details').load('members/meminfo.html');
+		$('#details').load('members/meminfo.html', function(){
+			$('#wait').hide();
+		});
+		$('#wait').show(););
 	
 		//loadJSON('#details', 'members template');
 	});
