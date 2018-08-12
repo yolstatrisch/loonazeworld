@@ -2,7 +2,6 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/loaderanim.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link rel="stylesheet" type="text/css" href="css/wait.css">
 		
 		<link rel="preload" href="/fonts/TingTong.ttf" as="font" crossorigin="anonymous" />
 		<link rel="preload" href="/fonts/Comfortaa-Light.ttf" as="font" crossorigin="anonymous" />
@@ -30,7 +29,6 @@
 		</div>
 		
 		<div class="page"></div>
-		<div id="wait"></div>
 	</body>
 	<footer>
 		<script
@@ -40,6 +38,7 @@
 		<script type="text/javascript">
 			$(function() {
 				$(".page").load("content.html", function(){
+					console.log("pass");
 					if(cnt == moonAnim){
 						console.log("pass2");
 						$(".loader").addClass("fade-out");

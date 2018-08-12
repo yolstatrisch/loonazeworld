@@ -26,10 +26,7 @@
 				page += '/' + c;
 			});
 			
-			$("#content").load(page + ".html", function(){
-				$('#wait').hide();
-			});
-			$('#wait').show();
+			$("#content").load(page + ".html");
 		}
 	}
 	
@@ -45,10 +42,7 @@
 				page += '/' + c;
 			});
 			
-			$(id).load(page + ".html", function(){
-				$('#wait').hide();
-			});
-			$('#wait').show();
+			$(id).load(page + ".html");
 			
 			$('.sel1').removeClass('sel1');
 			$('#_' + className[className.length - 1]).addClass('sel1');
