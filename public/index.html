@@ -36,18 +36,11 @@
 			  crossorigin="anonymous"></script>
 		<script type="text/javascript">
 			$(function() {
-				$(".page").load("content.html", function(){
-					console.log("pass");
-					if(cnt == moonAnim){
-						console.log("pass2");
-						$(".loader").addClass("fade-out");
-						$(".page").addClass("fade-in");
-					}
-				});
+				$(".page").load("content.html");
 			
 				moonAnim = 2;
 				cnt = 0;
-				
+			
 				$("#moon").on('oanimationend animationend webkitAnimationEnd', function() { 
 				   cnt++;
 
