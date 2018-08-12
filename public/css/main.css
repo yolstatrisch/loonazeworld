@@ -17,16 +17,12 @@
 
 @font-face {
 	font-family: "Gaegu";
-	src: url(../fonts/Gaegu-Light.ttf)format("truetype");
-	font-weight: normal;
+	src: url(../fonts/Gaegu-Regular.ttf)format("truetype");
 	unicode-range: U+AC00-D7AF;
 }
 
-@font-face {
+#preload{
 	font-family: "Gaegu";
-	src: url(../fonts/Gaegu-Regular.ttf)format("truetype");
-	font-weight: bold;
-	unicode-range: U+AC00-D7AF;
 }
 
 .flex{
@@ -73,7 +69,8 @@ html{
 	width: 100%;
 }
 
-#details{
+#details h1{
+	font-family: "TingTong";
 	width: 100%;
 }
 
@@ -144,17 +141,6 @@ li:hover .text{
 	width: 14vw;
 	
 	transition: width 0.25s linear;
-}
-
-.logo.sel1 ~ .text{
-	width: 14vw;
-}
-
-.logo.sel1{
-	background-image: -webkit-linear-gradient(155deg, #d34026, #dedd3a);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-webkit-animation: hue 60s infinite linear;
 }
 
 .text{
